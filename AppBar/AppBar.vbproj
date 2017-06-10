@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4ADB08FE-CE49-4070-AF8B-EAB61BEE427F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AppBar.My.MyApplication</StartupObject>
+    <RootNamespace>AppBar</RootNamespace>
+    <AssemblyName>AppBar</AssemblyName>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AppBar.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AppBar.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=9.2.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=9.2.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App Code\clsClase.vb" />
+    <Compile Include="App Code\clsConsumo.vb" />
+    <Compile Include="App Code\clsDetallePago.vb" />
+    <Compile Include="App Code\clsFormaPago.vb" />
+    <Compile Include="App Code\clsGrupo.vb" />
+    <Compile Include="App Code\clsInventario.vb" />
+    <Compile Include="App Code\clsInventarioRegistro.vb" />
+    <Compile Include="App Code\clsReceta.vb" />
+    <Compile Include="App Code\clsSubtipo.vb" />
+    <Compile Include="App Code\clsTarjetaConsumo.vb" />
+    <Compile Include="App Code\clsTipo.vb" />
+    <Compile Include="App Code\clsventa.vb" />
+    <Compile Include="App Code\Conexion.vb" />
+    <Compile Include="frmIngresoFormaPago.Designer.vb">
+      <DependentUpon>frmIngresoFormaPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngresoFormaPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.vb">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegClase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegClase.Designer.vb">
+      <DependentUpon>frmRegClase.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrupos.Designer.vb">
+      <DependentUpon>frmGrupos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGrupos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngresoCliente.Designer.vb">
+      <DependentUpon>frmIngresoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngresoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngresoInventario.Designer.vb">
+      <DependentUpon>frmIngresoInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngresoInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegConsumo.Designer.vb">
+      <DependentUpon>frmRegConsumo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegConsumo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmFormaPago.Designer.vb">
+      <DependentUpon>frmFormaPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFormaPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReceta.Designer.vb">
+      <DependentUpon>frmReceta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReceta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarjeta Consumo.Designer.vb">
+      <DependentUpon>Tarjeta Consumo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tarjeta Consumo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmIngresoFormaPago.resx">
+      <DependentUpon>frmIngresoFormaPago.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegClase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRegClase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrupos.resx">
+      <DependentUpon>frmGrupos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIngresoCliente.resx">
+      <DependentUpon>frmIngresoCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIngresoInventario.resx">
+      <DependentUpon>frmIngresoInventario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegConsumo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRegConsumo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFormaPago.resx">
+      <DependentUpon>frmFormaPago.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReceta.resx">
+      <DependentUpon>frmReceta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarjeta Consumo.resx">
+      <DependentUpon>Tarjeta Consumo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App Report\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
